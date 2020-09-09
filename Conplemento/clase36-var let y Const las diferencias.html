@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La diferencias entre var let y const</title>
+</head>
+<body>
+    <script>
+        var martin = {
+            nombre: "Martin",
+            apellido: "Tecun",
+            edad: 17
+        };
+        function esMayorDeEdad(persona){
+            if(persona.edad > 18) {
+                var mensaje = 'Es mayor de edad';
+            } else {
+                var mensaje = 'Es menor de edad';
+                var mensaje2 = 'Este es otro mensaje';
+            }
+            console.log(mensaje);
+            console.log(mensaje2);
+        };
+        /* esMayorDeEdad(martin); */
+
+        for(var i = 0; i < 10 ;i++){
+            console.log(i);
+        }
+        
+        console.log(`El valor es ${i}`);
+
+        
+    </script>
+</body>
+</html>
