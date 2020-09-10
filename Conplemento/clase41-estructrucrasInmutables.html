@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de datos inmutables</title>
+</head>
+<body>
+    <script>
+        const martin = {
+            nombre: "Martin",
+            apellido: "Tecun",
+            edad:17
+        };
+
+        /* const cumpleanos = persona=> persona.edad++; */
+/*         const cumpleanosInmutable = persona =>{
+            JSON.parse(JSON.stringify(persona));
+            return{
+                ...persona,
+                edad:persona.edad+1
+            }
+        };
+            Puede ser otra opcion
+        */
+        const cumpleanosInmutable = persona =>{
+            return{
+                ...persona,
+                edad: persona.edad+1
+            };
+        };
+    </script>
+</body>
+</html>
